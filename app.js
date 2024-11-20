@@ -332,7 +332,7 @@ const flowTours = addKeyword(["tour", "tours"])
   .addAction({ capture: true }, async (ctx, { flowDynamic }) => {
     const opcion = parseInt(ctx.body);
     const commonFooter =
-      '\n\nPara reservar tienes dos opciones:\n\n1. Reservar con un asesor: wa.link/hkm73d\n\nPara volver al menú anterior escribe "tours" o para ir al menú principal escribe "menu"';
+      'Para reservar con un asesor: wa.link/hkm73d\n\nPara volver al menú anterior escribe "tours" o para ir al menú principal escribe "menu"';
     switch (opcion) {
       case 1:
         return await flowDynamic(
